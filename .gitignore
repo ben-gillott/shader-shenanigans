@@ -1,3 +1,19 @@
+.vs
+._*
+.DS_Store
+
+xcuserdata
+local.properties
+
+cmake-build-debug
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+
 # Prerequisites
 *.d
 
