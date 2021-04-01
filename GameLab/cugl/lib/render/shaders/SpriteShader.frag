@@ -189,8 +189,17 @@ void main(void) {
         result *= scissormask(outPosition);
     }
     
-    result = vec4(0.0, 250.0, 0.0, 1.0);
+    //Draw a circle
+    vec2 centerPoint = vec2(200,100);
+    float distToPoint = sqrt(pow((outPosition.x - centerPoint.x), 2) + pow((outPosition.y - centerPoint.y), 2));
+    
+    if(distToPoint < 100){
+        result = vec4(0.0, 250.0, 0.0, 1.0);
+    }
+       
     frag_color = result;
 }
+
+
 /////////// SHADER END //////////)"
 
