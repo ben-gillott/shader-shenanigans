@@ -421,6 +421,6 @@ void Scene2::render(const std::shared_ptr<SpriteBatch>& batch) {
     for(auto it = _children.begin(); it != _children.end(); ++it) {
         (*it)->render(batch, Mat4::IDENTITY, _color);
     }
-
+    
     batch->end();
 }

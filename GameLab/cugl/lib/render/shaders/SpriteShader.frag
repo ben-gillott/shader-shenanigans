@@ -40,6 +40,10 @@ uniform int  uType;
 // Blur offset for simple kernel blur
 uniform vec2 uBlur;
 
+//UNIFORM BOIIIIIII
+//TODO:
+uniform float uHuh;
+
 // The texture for sampling
 uniform sampler2D uTexture;
 
@@ -193,7 +197,7 @@ void main(void) {
     vec2 centerPoint = vec2(200,100);
     float distToPoint = sqrt(pow((outPosition.x - centerPoint.x), 2) + pow((outPosition.y - centerPoint.y), 2));
     
-    if(distToPoint < 100){
+    if(distToPoint < uHuh){
         result = vec4(0.0, 250.0, 0.0, 1.0);
     }
        

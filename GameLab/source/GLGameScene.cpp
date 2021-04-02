@@ -182,7 +182,6 @@ void GameScene::render(const std::shared_ptr<cugl::SpriteBatch>& batch) {
     batch->setBlendFunc(GL_ONE, GL_ONE); // Additive blending
     _photons->draw(batch);
     batch->end();
-
 }
 
 /**

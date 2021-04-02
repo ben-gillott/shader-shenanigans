@@ -343,6 +343,8 @@ bool SpriteBatch::init(unsigned int capacity, const std::shared_ptr<Shader>& sha
 
     _shader->setUniformBlock("uContext",_unifbuff);
     
+    _shader->setUniform1f("uHuh", 100);
+    
     _context = new Context();
     _context->dirty = DIRTY_ALL_VALS;
     return true;
@@ -385,6 +387,8 @@ void SpriteBatch::setShader(const std::shared_ptr<Shader>& shader) {
     _shader = shader;
     _vertbuff->attach(_shader);
     _shader->setUniformBlock("uContext", _unifbuff);
+    _shader->setUniform1f("uHuh", 100);
+    
 }
 
 
